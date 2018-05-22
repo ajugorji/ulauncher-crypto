@@ -1,0 +1,20 @@
+{
+  "manifest_version": "2",
+  "api_version": "1",
+  "name": "CryptoPrices",
+  "description": "Display price of different cryptocurrencies",
+  "developer_name": "bakerio",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.3
+  },
+  "preferences": [
+    {
+      "id": "crypto",
+      "type": "keyword",
+      "name": "Crypto Price",
+      "description": "Current Crypto Prices",
+      "default_value": "p"
+    }
+  ]
+}
