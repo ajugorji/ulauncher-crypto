@@ -88,13 +88,16 @@ class KeywordQueryEventListener(EventListener):
                     return
 
             if bad_call:
-                items.append(ExtensionResultItem(icon='images/bitcoin.png',
+                items.append(ExtensionResultItem(icon='images/icon.png',
                                                  name='Ticker {0} not found.'.format(currency.upper()),
                                                  description='Sorry!'
                                                  ))
             else:
-                items.append(ExtensionResultItem(icon='images/bitcoin.png',
-                                                 name='{}{:.2f}'.format(symbol[1], rate*amount),
+                icon_path = 'images/icons/{0}.png'.format(currency.lower())
+                if not os.path.isfile(os.path.join(script_dir, icon_path)):
+                    icon_path = 'images/icon.png'
+                items.append(ExtensionResultItem(icon=icon_path,
+                                                 name='{}{:.3f}'.format(symbol[1], rate*amount),
                                                  description='{}'.format(api_info[0].format(currency, symbol[0])),
                                                  on_enter=CopyToClipboardAction(str(rate*amount))))
 
