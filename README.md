@@ -9,7 +9,3 @@ Adapted from the [ulauncher-btc](https://github.com/noam09/ulauncher-btc) extens
 - e.g. `p btc`, `p eth 2.5`
 
 ![ulauncher-btc extension screenshot](screenshot.png)
-
-## Tip-Jar
-- **BTC:** `36kJcATG9dF74Nq5HuJKz1vC7keZkJPKsu`
-- **ETH:** `0x8f2B9705a363C82DC66E68A1a476E314002f39C4`
