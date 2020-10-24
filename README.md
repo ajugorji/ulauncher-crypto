@@ -1,3 +1,6 @@
+Oct. 2020  
+Forked from https://github.com/bakeriogit/ulauncher-crypto to add Ulauncher V2 extension support
+
 # ulauncher-crypto
 [Ulauncher](https://ulauncher.io) extension that shows current crypto prices. 
 Prices taken from the [Cryptocompare API](https://www.cryptocompare.com/).
